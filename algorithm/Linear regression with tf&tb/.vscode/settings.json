@@ -4,5 +4,8 @@
     "python.unitTest.pyTestArgs": [
         "boston practice"
     ],
-    "python.unitTest.pyTestEnabled": true
+    "python.unitTest.pyTestEnabled": false,
+    "python.unitTest.promptToConfigure": false,
+    "python.unitTest.unittestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false
 }
