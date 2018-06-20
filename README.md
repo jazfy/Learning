@@ -1,3 +1,3 @@
-# TF-self-study
-I love ml.
-- for dream!
+1. 本仓库暂时用于学习机器学习框架,希望有所小成吧.
+2. 学完一个框架后,相关内容将迁移至 Complete Project 仓库.
+3. ⛽️⛽️⛽️!!!
