@@ -15,8 +15,10 @@ items = doc(' .explore-tab .feed-item').items()
 for item in items: #遍历提取相关内容
     question = item.find('h2').text() #问题部分
     author = item.find('.author-link-line').text() #作者信息
-    answer = pq(item.find(' .content').html().text() #正文
-    file = open('explore.txt','a+',) #规定写入内容格式
-    file.write('\n'.join([question,author,answer])) #规定写入内容
-    file.write('\n' + '=' * 50 + '\n') #写入具体格式
-    file.close()
+    answer = pq(item.find('.content').html().text() #正文
+    #files = open('explore.txt','a+',) #规定写入内容格式
+
+    with open('explore.txt','a',encoding='utf-8') as files: #不知为何,无法保存 
+        files.write('\n'.join([question,author,answer])) #规定写入内容
+        files.write('\n' + '=' * 50 + '\n') #写入具体格式
+        files.close()
